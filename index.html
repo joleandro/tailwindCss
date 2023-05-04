@@ -27,31 +27,49 @@
 <body>
 
     <!-- navbar -->
-    <nav class="bg-slate-500 h-13 flex justify-between pl-8 items-center">
+    <nav class="bg-slate-500 h-13 flex justify-between px-8 items-center fixed w-screen z-20" id="home">
         <div class="text-white">
-            <h1 class="text-1xl hover:text-sm cursor-pointer">Home</h1>
+            <h1 class="text-1xl hover:text-sm cursor-pointer"><a href="#home">Home</a></h1>
         </div>
             <ul class="flex w-1/2 justify-evenly cursor-pointer capitalize">
                 <li class="hover:text-white
-                ">Home</li>
-                <li class="hover:text-white">about</li>
-                <li class="hover:text-white">Menu</li>
+                "><a href="#about">About</a></li>
+                <li class="hover:text-white">My Portofolio</li>
+                <li class="hover:text-white">Contact</li>
             </ul>
     </nav>
 
     <!-- section hero -->
-    <div class="h-72 bg-cover flex justify-center items-center" style="background-image: url('https://source.unsplash.com/600x800?computer')">
+    <div class="h-96 bg-cover flex justify-center items-center bg-fixed" style="background-image: url('https://source.unsplash.com/600x800?computer')">
         <div class="bg-transparent/10 h-32 w-1/2 flex justify-center backdrop-blur-sm items-center rounded-xl shadow-lg shadow-slate-500">
             <h3 class="text-4xl p-4 text-center bg-gradient-to-r from-red-700 to-slate-800 bg-clip-text text-transparent shadow-sm">Helo Welcome To My Website</h3>
         </div>
     </div>
 
     <!-- About Me features -->
-    <section class="bg-zinc-700 h-screen overflow-hidden pl-8">
-        <h1 class="text-4xl text-center relative pt-10 bg-gradient-to-br from-red-600 to-cyan-300 bg-clip-text text-transparent">
+    <section class="bg-slate-50 h-screen overflow-hidden px-8" id="about">
+        <h1 class="text-4xl text-center relative pt-10 bg-gradient-to-br from-red-600 to-slate-600 bg-clip-text text-transparent mb-14">
             About Me
-            <span class="absolute border-b-2 w-1/2 left-1/4 bottom-0"></span>
+            <span class="absolute border-b-2 w-1/2 left-1/4 border-black bottom-0"></span>
         </h1>
+
+    <div class="grid grid-cols-2 gap-4">
+    
+        <div class="bg-gradient-to-r from-fuchsia-700 to-slate-500 rounded-lg p-4 px-12 shadow-xl shadow-fuchsia-500">
+            <h1 class="text-4xl
+            text-fuchsia-300">Name : Josua Leandro Siagian</h1>
+            <h2 class="text-4xl
+            text-fuchsia-300">Age : 22 Years</h2>
+            <p class="text-center my-5 text-3xl text-fuchsia-300">I'm a junior programmer in froend end develop</p>
+        </div>
+        
+        <div style="background-image: url('https://source.unsplash.com/600x800?random'); box-shadow: inset 0 0 10px rgba(255, 255, 255, 1);" class="rounded-lg bg-fixed">
+            <div class="backdrop-blur-sm bg-white/30 max-h-screen
+            ">
+            <img src="about-me.png" alt="...">
+        </div>
+        </div>
+    </div>
     </section>
 
 </body>
